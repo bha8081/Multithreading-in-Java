@@ -15,6 +15,9 @@ public class Thread_Task_Excecute {
     {
         System.out.println("Hello :" +Thread.currentThread() .getName()); // main
 
+        // Check the thread is alive or not.
+        System.out.println("Check Thread alive or not :"+ Thread.currentThread() .isAlive());
+
         Demo d1 = new Demo();
         d1.setName("Bhavesh");
         d1.start();
