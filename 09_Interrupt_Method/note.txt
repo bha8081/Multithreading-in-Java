@@ -2,3 +2,18 @@ Use: It is used to interrupt an execute thred.
 interrupt() method will only works when the thread is in sleeping or waiting state( sleep() or wait() ).
 If a thread is not a sleeping or waiting state then calling an interrupt() method will perform normal behavior.
 When we use interrupt() method if throws an exception InterruptException.
+
+interrupted and isinterrupted method.
+1. interrupted() method is used to check wether a thread is interrupted or not.
+And
+isInterrupted() method is used to check wether a thread is interrupt or not.
+2. interrupted() method class the interrupted status from true to false if thread is interrupted.
+And
+isInterrupted() method does not clear the interrupted status.
+3. interrupted() method will be change the result, if called twice.
+And
+isInterrupted() method will produce same result if called twice.
+4. Syntax: public static boolean interrupted() { -- }.
+ public boolean isInterrupted() {
+    --
+    }.
