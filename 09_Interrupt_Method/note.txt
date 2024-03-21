@@ -1,0 +1,4 @@
+Use: It is used to interrupt an execute thred.
+interrupt() method will only works when the thread is in sleeping or waiting state( sleep() or wait() ).
+If a thread is not a sleeping or waiting state then calling an interrupt() method will perform normal behavior.
+When we use interrupt() method if throws an exception InterruptException.
