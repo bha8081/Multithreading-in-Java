@@ -1,0 +1,18 @@
+//Syncronization block.
+public class Book_Theater_Set
+{
+	int total_seats = 10;
+	public void bookSeat (int seats)
+	{
+		if (total_seats >= seats)
+		{
+			System.out.println(seats+" seats booked successfully");
+			total_seats = total_seats-seats;
+			System.out.println("Seats Left : " +total_seats);
+		}
+		else {
+			System.out.println("Sorry seats cannot be booked....!!");
+			System.out.println("Seats Left: " +total_seats);
+		}
+	}
+}
